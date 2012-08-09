@@ -11,7 +11,7 @@ import java.util.*;
  */
 public class VidaStub {
     public static List<Persona> creaDatos() throws Exception {
-        List<Persona> lp=new ArrayList<>();
+        List<Persona> lp=new ArrayList<Persona>();
         
         Persona eva=new Persona();
         eva.setNombre("Eva");

@@ -13,7 +13,7 @@ import vidaException.*;
  */
 public class ListaMedida {
     
-private List<Medida> lista=new LinkedList<>();
+private List<Medida> lista=new LinkedList<Medida>();
 protected Persona persona;
 
 public ListaMedida(Persona p){
@@ -97,7 +97,7 @@ public ListaMedida(Persona p){
 public ListaMedida getMedidaIntervalo(Date fechaInicio, Date fechaFinal, int tipoMedida){
        this.ordenaListaMedida();
        ListIterator it=lista.listIterator();
-       List<Medida> lisRes=new LinkedList<>();
+       List<Medida> lisRes=new LinkedList<Medida>();
        boolean fin=false;
        while (fin==false && it.hasNext()){
            Medida elem = (Medida)it.next();
