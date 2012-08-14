@@ -10,7 +10,7 @@ import java.util.Date;
  * @author SANCHEE
  * @version 1.0
  */
-public class Persona {
+public class Persona implements Persistente {
    private String nombre;
    private String apellido1;
    private String apellido2;
@@ -19,6 +19,16 @@ public class Persona {
    private String email;
    public Historial historial;
 
+   
+   //Para implementar la interface Persistente
+   public void grabaBD(Object o){
+       //código
+   }
+   public Object leeBD(String[] params){
+        return(this);
+    }
+   
+   // Fin implementación Persistente
 public Persona(){
     historial=new Historial(this);
     fechaNacimiento=new Date();
