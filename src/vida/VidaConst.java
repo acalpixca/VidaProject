@@ -11,6 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import vidaproject.VidaProject;
 
+
 /**
  *
  * @author SANCHEE
@@ -74,5 +75,9 @@ public class VidaConst {
         long numberOfMSInADay = 1000*60*60*24;
         //System.out.println(c3.getTimeInMillis() / numberOfMSInADay);
         return((int)(c3.getTimeInMillis() / numberOfMSInADay));
+    }
+    
+    public static void abreBD(){
+        
     }
 }

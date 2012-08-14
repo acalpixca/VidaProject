@@ -5,6 +5,7 @@
 package vida;
 
 import java.util.Date;
+import java.sql.*;
 /**
  *
  * @author SANCHEE
@@ -22,9 +23,14 @@ public class Persona implements Persistente {
    
    //Para implementar la interface Persistente
    public void grabaBD(Object o){
+       //Connection db=VidaConst.abreBD();
+       String nombreTabla=this.getClass().getName();
+       String query="INSERT INTO " + nombreTabla;
+       
        //código
    }
    public Object leeBD(String[] params){
+       VidaConst.abreBD();
         return(this);
     }
    

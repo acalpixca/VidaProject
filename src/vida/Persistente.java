@@ -8,6 +8,9 @@ package vida;
  *
  * @author SANCHEE
  */
+
+
+
 public interface Persistente {
     void grabaBD(Object o);
     Object leeBD(String[] params);
