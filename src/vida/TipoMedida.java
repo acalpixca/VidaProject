@@ -24,4 +24,12 @@ public class TipoMedida {
     public String getUnidadMedida(){
         return(unidadMedida);
     }
+    
+    public void setNombre(String n) {
+        nombre=n;
+    }
+    
+    public void setUnidadMedida(String n){
+        unidadMedida=n;
+    }
 }
