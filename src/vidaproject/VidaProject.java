@@ -45,6 +45,7 @@ public class VidaProject {
         System.out.println("El peso máximo ha sido " + ((Peso)eva.historial.getListaMedida(VidaConst.PESO).maximoValor(VidaConst.PESO)).getValor());
         System.out.println("El peso mínimo ha sido " + ((Peso)eva.historial.getListaMedida(VidaConst.PESO).minimoValor(VidaConst.PESO)).getValor());
         
+        System.out.println("Resta fechas 2/05/2012 menos 1/10/1995 da " + VidaConst.restaFechas(VidaConst.stringToFecha("2012-05-02"), VidaConst.stringToFecha("1995-10-01")));
         Persona br=new Persona();
         br=lp.get(1);
         System.out.println("voy a hacer cálculos de BMI...");
